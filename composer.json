@@ -1,0 +1,26 @@
+{
+    "name": "mltg0711/wp-document-pdf-demo",
+    "description": "WordPress plugin demo: versioned document templates, member acceptance records, and PDF generation.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=8.1",
+        "dompdf/dompdf": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "WpDocumentPdfDemo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WpDocumentPdfDemo\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
